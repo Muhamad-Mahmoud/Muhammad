@@ -1,0 +1,152 @@
+
+/* Tech Stack Section - Enhanced */
+.tech-card {
+  background: var(--tech-card-bg);
+  padding: 30px 20px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+  opacity: 0;
+  transition: all 0.5s ease;
+  animation: rotate 10s linear infinite;
+}
+
+.tech-card:hover::before {
+  opacity: 1;
+}
+
+.tech-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: var(--tech-card-hover);
+  border-color: var(--accent-color);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.15);
+}
+
+.tech-logo {
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.tech-card:hover .tech-logo {
+  transform: scale(1.1);
+}
+
+.tech-card h5 {
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.tech-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Colored icons for devicons */
+.devicon-csharp-plain.colored {
+  color: #239120;
+}
+
+.devicon-dotnetcore-plain.colored {
+  color: #512bd4;
+}
+
+.devicon-microsoftsqlserver-plain.colored {
+  color: #cc2927;
+}
+
+.devicon-azure-plain.colored {
+  color: #0078d4;
+}
+
+.devicon-react-original.colored {
+  color: #61dafb;
+}
+
+.devicon-javascript-plain.colored {
+  color: #f7df1e;
+}
+
+.devicon-typescript-plain.colored {
+  color: #3178c6;
+}
+
+.devicon-bootstrap-plain.colored {
+  color: #7952b3;
+}
+
+.devicon-git-plain.colored {
+  color: #f05032;
+}
+
+.devicon-docker-plain.colored {
+  color: #2496ed;
+}
+
+.devicon-visualstudio-plain.colored {
+  color: #5c2d91;
+}
+
+.devicon-vscode-plain.colored {
+  color: #007acc;
+}
+
+/* Additional Enhancements */
+.tech-card .devicon-csharp-plain.colored,
+.tech-card .devicon-dotnetcore-plain.colored,
+.tech-card .devicon-microsoftsqlserver-plain.colored,
+.tech-card .devicon-azure-plain.colored,
+.tech-card .devicon-react-original.colored,
+.tech-card .devicon-javascript-plain.colored,
+.tech-card .devicon-typescript-plain.colored,
+.tech-card .devicon-bootstrap-plain.colored,
+.tech-card .devicon-git-plain.colored,
+.tech-card .devicon-docker-plain.colored,
+.tech-card .devicon-visualstudio-plain.colored,
+.tech-card .devicon-vscode-plain.colored {
+  transition: all 0.3s ease;
+}
+
+.tech-card:hover .devicon-csharp-plain.colored,
+.tech-card:hover .devicon-dotnetcore-plain.colored,
+.tech-card:hover .devicon-microsoftsqlserver-plain.colored,
+.tech-card:hover .devicon-azure-plain.colored,
+.tech-card:hover .devicon-react-original.colored,
+.tech-card:hover .devicon-javascript-plain.colored,
+.tech-card:hover .devicon-typescript-plain.colored,
+.tech-card:hover .devicon-bootstrap-plain.colored,
+.tech-card:hover .devicon-git-plain.colored,
+.tech-card:hover .devicon-docker-plain.colored,
+.tech-card:hover .devicon-visualstudio-plain.colored,
+.tech-card:hover .devicon-vscode-plain.colored {
+  filter: brightness(1.2) drop-shadow(0 0 10px currentColor);
+}

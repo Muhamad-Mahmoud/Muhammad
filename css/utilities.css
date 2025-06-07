@@ -1,0 +1,53 @@
+
+/* Utility Classes */
+.section-padding {
+  padding: 100px 0;
+}
+
+.bg-dark-alt {
+  background-color: var(--secondary-bg);
+}
+
+/* Button Styles */
+.btn-accent {
+  background: var(--gradient-accent);
+  border: none;
+  color: white;
+  box-shadow: var(--shadow-medium);
+}
+
+.btn-accent:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-heavy);
+  color: white;
+  filter: brightness(1.1);
+}
+
+.btn-outline-light {
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
+  background: transparent;
+}
+
+.btn-outline-light:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.hero-buttons .btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-light);
+}
+
+/* Focus States for Accessibility */
+.btn:focus,
+.form-control:focus,
+.nav-link:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}

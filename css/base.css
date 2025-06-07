@@ -1,0 +1,115 @@
+/* CSS Variables for Theme */
+:root {
+  --primary-bg: #0a0e1a;
+  --secondary-bg: #1a1f36;
+  --accent-color: #00d4ff;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b8c8;
+  --text-muted: #6c7580;
+  --border-color: #2a2f45;
+  --card-bg: #151b2d;
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-accent: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%);
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.2);
+  --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.3);
+  --tech-card-bg: linear-gradient(145deg, #1a1f36 0%, #252b47 100%);
+  --tech-card-hover: linear-gradient(145deg, #252b47 0%, #1a1f36 100%);
+}
+
+/* Light Theme Variables */
+[data-theme="light"] {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f8f9fa;
+  --accent-color: #0066ff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --tech-card-bg: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  --tech-card-hover: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+}
+
+.text-accent {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-padding {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-dark-alt {
+  background: linear-gradient(145deg, var(--primary-bg), var(--secondary-bg));
+  position: relative;
+}
+
+.bg-dark-alt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 80% 30%, rgba(102, 126, 234, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.lead.text-secondary {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  position: relative;
+  padding: 0 20px;
+}

@@ -1,0 +1,158 @@
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .tech-card {
+    padding: 25px 15px;
+  }
+
+  .tech-logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .hero-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .hero-buttons .btn:last-child {
+    margin-bottom: 0;
+  }
+  
+  .tech-icon {
+    position: static;
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  .floating-tech {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .footer-nav {
+    gap: 20px;
+  }
+  
+  .contact-form {
+    padding: 25px;
+  }
+  
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .tech-card {
+    padding: 20px 15px;
+  }
+
+  .tech-logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .about-card,
+  .tech-card {
+    padding: 25px 20px;
+  }
+  
+  .testimonial-card {
+    padding: 25px;
+    margin: 10px;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .footer {
+    padding: 40px 0 20px;
+  }
+  
+  .social-links {
+    gap: 10px;
+  }
+  
+  .social-link {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .tech-card {
+    padding: 20px 10px;
+  }
+
+  .card-icon,
+  .tech-logo {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .scroll-to-top,
+  #testimonials,
+  #contact {
+    display: none;
+  }
+  
+  .section-padding {
+    padding: 30px 0;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+}

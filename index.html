@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Developer | .NET & React Specialist</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS - Base & Utilities -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    
+    <!-- Layout Components -->
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/tech-stack.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <!-- Animations & Responsive -->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Tech Stack SVG Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-accent" href="#home">
+                <i class="bi bi-code-square me-2"></i>
+                DevPortfolio
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech-stack">Tech Stack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="btn ms-3" type="button">
+                    <i class="bi bi-sun-fill"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="text-accent">Muhammad Mahmoud</span><br>
+                            Full-Stack Developer
+                        </h1>
+                        <p class="hero-description mb-4">
+                            Specialized in .NET Backend Development and React Frontend Solutions. 
+                            I build scalable, high-performance web applications with clean architecture 
+                            and modern technologies.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-accent btn-lg me-3">
+                                <i class="bi bi-eye me-2"></i>View Projects
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">
+                                <i class="bi bi-envelope me-2"></i>Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="hero-image">
+                        <div class="profile-card">
+                            <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Prescription02&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=Hoodie&clotheColor=Gray&eyeType=Happy&eyebrowType=Default&mouthType=Smile&skinColor=Light" 
+                                 alt="Muhammad Mahmoud - Full Stack Developer" class="profile-img">
+                            <div class="floating-tech">
+                                <div class="tech-icon">.NET</div>
+                                <div class="tech-icon">React</div>
+                                <div class="tech-icon">Azure</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-dark-alt">
+        <div class="decorative-circle"></div>
+        <div class="decorative-dots"></div>
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <div class="title-wrapper">
+                        <span class="section-subtitle">Get to Know Me</span>
+                        <h2 class="section-title mb-4">About Me</h2>
+                    </div>
+                    <p class="lead text-secondary">
+                        Passionate Full-Stack Developer with 5+ years of experience building enterprise-level 
+                        applications using .NET and React technologies.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="about-card">
+                        <div class="blob"></div>
+                        <div class="rotating-border"></div>
+                        <div class="card-icon">
+                            <i class="bi bi-server"></i>
+                        </div>
+                        <h4>Backend Development</h4>
+                        <p>Expert in .NET Core, ASP.NET, Entity Framework, and building scalable APIs with clean architecture patterns.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="about-card">
+                        <div class="blob"></div>
+                        <div class="rotating-border"></div>
+                        <div class="card-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h4>Frontend Development</h4>
+                        <p>Proficient in React, JavaScript, TypeScript, and creating responsive, user-friendly interfaces.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="about-card">
+                        <div class="blob"></div>
+                        <div class="rotating-border"></div>
+                        <div class="card-icon">
+                            <i class="bi bi-cloud"></i>
+                        </div>
+                        <h4>Cloud & DevOps</h4>
+                        <p>Experience with Azure, Docker, CI/CD pipelines, and deploying applications to production environments.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-grid">
+                <div class="skill-item">Clean Architecture</div>
+                <div class="skill-item">RESTful APIs</div>
+                <div class="skill-item">Database Design</div>
+                <div class="skill-item">Unit Testing</div>
+                <div class="skill-item">Agile/Scrum</div>
+                <div class="skill-item">Problem Solving</div>
+                <div class="skill-item">Team Leadership</div>
+                <div class="skill-item">Code Review</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4">Tech Stack</h2>
+                    <p class="lead text-secondary">
+                        Technologies and tools I use to build amazing applications
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Backend Technologies -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-csharp-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>C#</h5>
+                        <p>Primary programming language for backend development</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-dotnetcore-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>.NET Core</h5>
+                        <p>Cross-platform framework for building modern applications</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-microsoftsqlserver-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>SQL Server</h5>
+                        <p>Relational database management and optimization</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-azure-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>Azure</h5>
+                        <p>Cloud services and deployment platform</p>
+                    </div>
+                </div>
+                
+                <!-- Frontend Technologies -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-react-original colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>React</h5>
+                        <p>Component-based UI library for building interfaces</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-javascript-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>JavaScript</h5>
+                        <p>Core language for frontend interactivity</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-typescript-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>TypeScript</h5>
+                        <p>Typed superset of JavaScript for better development</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-bootstrap-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>Bootstrap</h5>
+                        <p>CSS framework for responsive design</p>
+                    </div>
+                </div>
+                
+                <!-- Tools & Others -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-git-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>Git</h5>
+                        <p>Version control and collaboration</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-docker-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>Docker</h5>
+                        <p>Containerization and deployment</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-visualstudio-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>Visual Studio</h5>
+                        <p>Primary IDE for .NET development</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-card">
+                        <div class="tech-logo">
+                            <i class="devicon-vscode-plain colored" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5>VS Code</h5>
+                        <p>Lightweight editor for frontend development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-dark-alt">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4">Featured Projects</h2>
+                    <p class="lead text-secondary">
+                        Some of my recent work showcasing full-stack development skills
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1571689936114-b16146c9570a?w=600&h=400&fit=crop" 
+                                 alt="E-Commerce Platform" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-accent">
+                                    <i class="bi bi-eye me-2"></i>View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>E-Commerce Platform</h5>
+                            <p>Full-stack e-commerce solution with .NET Core API, React frontend, and SQL Server database. Features include user authentication, payment processing, and admin dashboard.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">.NET Core</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">Azure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop" 
+                                 alt="Task Management System" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-accent">
+                                    <i class="bi bi-eye me-2"></i>View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Task Management System</h5>
+                            <p>Collaborative project management tool with real-time updates, team collaboration features, and comprehensive reporting dashboard built with modern technologies.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">SignalR</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
+                                 alt="API Gateway Service" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-accent">
+                                    <i class="bi bi-eye me-2"></i>View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Microservices API Gateway</h5>
+                            <p>Scalable microservices architecture with API gateway, service discovery, and distributed caching. Handles high-traffic enterprise applications.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">.NET 6</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Kubernetes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4">What People Say</h2>
+                    <p class="lead text-secondary">
+                        Testimonials from colleagues and clients I've worked with
+                    </p>
+                </div>
+            </div>
+            
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "Alex delivered exceptional work on our enterprise application. His expertise in .NET and attention to clean code practices made the project a huge success."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" 
+                                     alt="John Smith" class="author-img">
+                                <div class="author-info">
+                                    <h6>John Smith</h6>
+                                    <span>Senior Project Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "Working with Alex was a pleasure. His React skills and ability to translate complex requirements into elegant solutions impressed our entire team."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b0e0?w=60&h=60&fit=crop&crop=face" 
+                                     alt="Sarah Johnson" class="author-img">
+                                <div class="author-info">
+                                    <h6>Sarah Johnson</h6>
+                                    <span>Lead Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "Alex's full-stack expertise and problem-solving abilities helped us deliver our project ahead of schedule. Highly recommended!"
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" 
+                                     alt="Mike Wilson" class="author-img">
+                                <div class="author-info">
+                                    <h6>Mike Wilson</h6>
+                                    <span>CTO, Tech Startup</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <i class="bi bi-chevron-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <i class="bi bi-chevron-right"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-dark-alt">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4">Get In Touch</h2>
+                    <p class="lead text-secondary">
+                        Ready to discuss your next project? Let's build something amazing together.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contact-form" class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-accent btn-lg">
+                                    <i class="bi bi-send me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-info mt-5">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <h6>Email</h6>
+                            <p>contact@muhammadmahmoud.dev</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-item">
+                            <i class="bi bi-linkedin"></i>
+                            <h6>LinkedIn</h6>
+                            <p>linkedin.com/in/muhammadmahmoud</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-item">
+                            <i class="bi bi-github"></i>
+                            <h6>GitHub</h6>
+                            <p>github.com/muhammadmahmoud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-content">
+                        <h5>Muhammad Mahmoud</h5>
+                        <p class="mb-0">Full-Stack Developer specializing in .NET and React</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <nav class="footer-nav">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#tech-stack">Tech Stack</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="copyright">
+                        © 2024 Alex Johnson. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
